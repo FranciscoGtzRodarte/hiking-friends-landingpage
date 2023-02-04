@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@200;400;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #455a64;
+}
+
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.048),
+    0 0px 20px 0 rgba(0, 0, 0, 0.048);
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+li,
+a {
+  font-weight: 700;
+  font-size: 18px;
+  list-style: none;
+  display: inline-block;
+  text-decoration: none;
+  color: #455a64;
+  text-align: center;
+}
+li {
+  margin-left: 2rem;
+}
+a.logo {
+  font-weight: 700;
+  font-size: 37px;
+  color: #ff725e;
+}
+
+.nav-link:hover {
+  border-bottom: 4px solid #ff6752;
+}
+
+/* nav li.nav-link:hover::after {
+  content: "";
+  width: auto;
+  width: 25%;
+  height: 5px;
+  background-color: #ff6752;
+  position: absolute;
+  bottom: -10px;
+  left: 7%;
+} */
+
+.icons a.logo2,
+.icons #logo2 {
+  font-weight: 700;
+  font-size: 37px;
+  color: #ffffff;
+  margin-right: 10px;
+  width: 150px;
+}
+
+a.log-in {
+  background-color: #ffffff;
+  border: #ff725e solid 2px;
+  color: #455a64;
+  border-radius: 50px;
+  padding: 10px 20px;
+  text-align: center;
+  min-width: 100px;
+}
+
+.sent-btn {
+  background-color: #ff725e;
+  color: white;
+  border-radius: 50px;
+  padding: 10px;
+  text-align: center;
+}
+
+a.log-in:hover {
+  background-color: #ff6752;
+  color: #ffffff;
+}
+
+.sent-btn:hover,
+button:hover {
+  background-color: #ff6752;
+}
+
+header {
+  display: inline-block;
+  width: auto;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.header-text {
+  width: 400px;
+  z-index: 2;
+  margin: 0;
+  position: absolute;
+  margin-left: 12%;
+}
+
+.hikers-img {
+  position: absolute;
+  z-index: 1;
+  width: 68%;
+  bottom: 0;
+  right: 0;
+}
+h1 {
+  margin-top: 3rem;
+  font-size: 250%;
+  font-weight: 700;
+}
+
+p {
+  font-weight: 600;
+  font-size: 104%;
+  line-height: 25px;
+  margin-top: 15px;
+  line-height: 1.5;
+}
+
+button {
+  width: 45%;
+  background: #ff725e;
+  border-radius: 50px;
+  color: white;
+  font-weight: 600;
+  font-size: 130%;
+  /* line-height: 25px; */
+  text-align: center;
+  padding: 1rem;
+  border: 0;
+  margin-top: 5%;
+  cursor: pointer;
+}
+
+.contact-form-section {
+  background-color: #fddeda;
+  z-index: 3;
+  padding: 50px;
+}
+
+footer {
+  background-color: #455a64;
+}
+
+.contact-text {
+  position: relative;
+  text-align: center;
+  margin-bottom: 8%;
+}
+
+.contact-form {
+  text-align: center;
+  width: auto;
+  position: relative;
+  margin-bottom: 8%;
+}
+
+h2 {
+  font-size: 180%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+}
+
+input {
+  background-color: white;
+  border-radius: 50px;
+  width: 50%;
+  height: 58px;
+  color: #ff725e;
+  border: 0;
+  display: block;
+  text-align: center;
+  position: relative;
+  margin: 1% auto;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+input:focus-visible {
+  outline-offset: 0px;
+  outline: #ff725e auto 3px;
+}
+
+:focus-visible {
+  outline: #ff725e auto 5px;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #455a64;
+  opacity: 0.5; /* Firefox */
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  padding: 2% 6%;
+}
+
+footer li {
+  margin-left: 0;
+}
+
+.icons span {
+  font-weight: 700;
+  font-size: 20px;
+  margin-right: 1%;
+  list-style: none;
+  display: inline-block;
+  text-decoration: none;
+  color: #ff725e;
+}
+
+ul.icons li {
+  margin-right: 5%;
+}
+
+p.rights {
+  color: white;
+  width: auto;
+  text-align: right;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 466px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .header-text {
+    width: 330px;
+  }
+  input {
+    width: 100%;
+    margin: 4% auto;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer ul {
+    margin-bottom: 4%;
+  }
+}
